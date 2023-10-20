@@ -62,6 +62,5 @@ httpd.serve_forever()
 ## OUTPUT:
 ![Alt text](<client output.png>)
 ![Alt text](<server output.png>)
-
 ## RESULT:
 The program is executed succesfully
