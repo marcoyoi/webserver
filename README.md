@@ -29,7 +29,7 @@ Testing the webserver
 ## PROGRAM:
 from http.server import HTTPServer,BaseHTTPRequestHandler
 
-content=```html
+content='''
 <!doctype html>
 <html>
 <head>
@@ -44,8 +44,7 @@ content=```html
 <h2>5. MERN Stack</h2>
 </body>
 </html>
-```
-```py
+'''
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         print("Get request received...")
@@ -58,7 +57,7 @@ print("This is my webserver")
 server_address =('',80)
 httpd = HTTPServer(server_address,MyServer)
 httpd.serve_forever()
-```
+
 
 ## OUTPUT:
 ### Client output
