@@ -45,7 +45,7 @@ content='''
 </body>
 </html>
 '''
-```py
+'''
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         print("Get request received...")
@@ -57,8 +57,8 @@ class MyServer(BaseHTTPRequestHandler):
 print("This is my webserver") 
 server_address =('',80)
 httpd = HTTPServer(server_address,MyServer)
-httpd.serve_forever()```
-
+httpd.serve_forever()
+'''
 
 ## OUTPUT:
 ### Client output
