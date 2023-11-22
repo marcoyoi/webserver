@@ -27,6 +27,7 @@ Serving the HTML pages.
 Testing the webserver
 
 ## PROGRAM:
+```html
 from http.server import HTTPServer,BaseHTTPRequestHandler
 
 content='''
@@ -45,7 +46,9 @@ content='''
 </body>
 </html>
 '''
-'''
+```
+
+```py
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         print("Get request received...")
@@ -58,7 +61,7 @@ print("This is my webserver")
 server_address =('',80)
 httpd = HTTPServer(server_address,MyServer)
 httpd.serve_forever()
-'''
+```
 
 ## OUTPUT:
 ### Client output
